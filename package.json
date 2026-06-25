@@ -12,10 +12,13 @@
     "version": "node scripts/update-versions.js",
     "changelog": "node scripts/update-changelog.js",
     "build:css": "npx tailwindcss -i ./public/css/tailwind.css -o ./public/css/tailwind.min.css --minify",
-    "dev:css": "npx tailwindcss -i ./public/css/tailwind.css -o ./public/css/tailwind.min.css --watch"
+    "dev:css": "npx tailwindcss -i ./public/css/tailwind.css -o ./public/css/tailwind.min.css --watch",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
   },
   "devDependencies": {
     "husky": "^9.1.7",
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^3.4.17",
+    "wrangler": "^4.104.0"
   }
 }
